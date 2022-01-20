@@ -1,0 +1,63 @@
+
+/* all main  CSS work Start */
+
+body {
+	background: #ddd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face { 
+    font-family: 'digital';
+    src: url('./fonts/digital-7.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+/* all main  CSS Wrok End */
+
+
+
+
+#time_out {
+    font-size: 70px;
+    font-weight: 700 !important;
+    font-family: digital;
+}
+
+.fiverr_output table.table {
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.fiverr_output thead {
+    font-size: 20px;
+    font-family: roboto;
+    text-transform: uppercase;
+}
+.fiverr_output thead th {
+    width: 25% !important;
+}
+
+#time_out td {
+    position: relative;
+}
+span.ti_dot {
+    position: absolute;
+    right: -5%;
+}
+
+.age_output table th {
+    width: 120px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: roboto;
+}
+.age_output {
+    padding: 0 20px;
+    border: 15px double #34910c;
+}

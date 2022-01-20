@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="slyle.css">
+
+    <title>Assignment Class 14</title>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="fiverr_cont">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <div class="fiverr_sec">
+                                <div class="fiverr_input">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h2 class="title alert-success text-center p-2 mb-2 rounded shadow text-uppercase">Fiver Order Counter</h2>
+                                            <hr>
+                                            <form action="" class="form-inline d-flex justify-content-center">
+                                                <div class="form-group">
+                                                    <input id="input_date" class="form-control" type="date">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input id="input_time"  type="time" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input id="oder_btn" class="btn btn-success" type="submit" value="Create an Order">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fiverr_output">
+                                    <table class="table  text-center">
+                                      <thead class="">
+                                        <tr>
+                                          <th scope="col">Day</th>
+                                          <th scope="col">Hour</th>
+                                          <th scope="col">Minutes</th>
+                                          <th scope="col">Seconds</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr id="time_out">
+                                          <td><span id="day_out">00</span><span class="ti_dot">:</span></td>
+                                          <td><span id="hour_out">00</span><span class="ti_dot">:</span></td>
+                                          <td><span id="min_out">00</span><span class="ti_dot">:</span></td>
+                                          <td><span id="Sec_out">00</span></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="age_cont">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <div class="age_sec">
+
+                                <div class="age_input">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h2 class="title alert-success text-center p-2 mb-2 rounded shadow text-uppercase">Age Calculator</h2>
+                                            <hr>
+                                            <form action="" class="justify-content-center d-flex">
+                                                <div class="form-group m-3">
+                                                    <label for="bath_date">Date of Birth</label>
+                                                    <input id="bath_date" class="form-control" type="date">
+                                                </div>
+                                                <div class="form-group m-3">
+                                                    <label for="a_on_d">Age on Date</label>
+                                                    <input id="a_on_d"  type="date" class="form-control">
+                                                </div>
+
+                                            </form>
+                                                <div class="">
+                                                        <input id="age_btn" class="btn btn-success form-control" type="submit" value="Calculate">
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="age_output bg-white">
+                                    <table class="table  text-left">
+                                      <tbody>
+                                        <tr id="age_year">
+                                          <th>Years</th>
+                                          <td>:</td>
+                                        </tr>
+                                        <tr id="age_manth">
+                                          <th>months</th>
+                                          <td>:</td>
+                                        </tr>
+                                        <tr id="age_week">
+                                          <th>weekS</th>
+                                          <td>:</td>
+                                        </tr>
+                                        <tr id="age_day">
+                                            <th>days</th>
+                                            <td>:</td>
+                                          </tr>
+                                        <tr id="age_hour">
+                                          <th>hours</th>
+                                          <td>:</td>
+                                        </tr>
+                                        <tr id="age_min">
+                                          <th>minutes</th>
+                                          <td>:</td>
+                                        </tr>
+                                        <tr id="age_sic">
+                                          <th>seconds</th>
+                                          <td>:</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="Js/fiverr.js"></script>
+    <script src="Js/age_cal.js"></script>
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
+</html>
