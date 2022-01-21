@@ -14,7 +14,6 @@ const ageCal = document.getElementById('age_btn');
 ageCal.addEventListener('click', function(){
 
       
-       
 
         let brthDate = document.getElementById('bath_date').value;
         let ageOnDath = document.getElementById('a_on_d').value;
@@ -23,6 +22,8 @@ ageCal.addEventListener('click', function(){
         let age_on_dath = new Date(ageOnDath);
 
         let boyos = Math.floor(age_on_dath.getTime() - bdath.getTime());
+
+
 
 
         let totalSec = Math.floor(boyos / 1000);
@@ -35,37 +36,21 @@ ageCal.addEventListener('click', function(){
 
         let totalweek = Math.floor(totalDay / 7);
 
-        let totalmanth = Math.floor(totalSec / 60 / 60 / 24 / 30);
+        let totalmanth = Math.floor(totalDay / 30.417);
 
         let totalYear = Math.floor(totalmanth / 12);
 
 
-        // let mainManth = totalmanth - (totalYear * 30);
-
-        // console.log(mainManth);
 
 
+        age_year.children[1].innerHTML = `${totalYear} Years`;
+        age_manth.children[1].innerHTML = `${totalmanth} Month`;
+        age_week.children[1].innerHTML = `${totalweek} Weeks`;
+        age_day.children[1].innerHTML = `${totalDay} Days`;
+        age_hour.children[1].innerHTML = `${totalHour} Hours`;
+        age_min.children[1].innerHTML = `${totalMin} Minutes`;
+        age_sic.children[1].innerHTML = `${totalSec} Seconds`;
 
-        // let totalDay = totalDay - (totalHour / 365);
-
-        // let mainHour = totalHour - (totalDay * 24);
-        // let mainMin = totalMin - (totalDay * 24 * 60) - (mainHour * 60);
-        // let mainSic = totalSec - (totalDay * 24 * 60 * 60) - (mainHour * 60 * 60) - (mainMin * 60);
-
-        age_year.children[1].innerHTML = totalYear;
-        age_manth.children[1].innerHTML = totalmanth;
-        age_week.children[1].innerHTML = totalweek;
-        age_day.children[1].innerHTML = totalDay;
-        age_hour.children[1].innerHTML = totalHour;
-        age_min.children[1].innerHTML = totalMin;
-        age_sic.children[1].innerHTML = totalSec;
-
-        console.log(bdath);
-        console.log(age_on_dath);
-        console.log(boyos);
-
-
-
-
+ 
 
 });
